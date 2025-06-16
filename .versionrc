@@ -1,0 +1,8 @@
+{
+  "types": [
+    { "type": "feat", "section": "Fonctionnalités" },
+    { "type": "fix", "section": "Corrections" },
+    { "type": "docs", "section": "Documentation" },
+    { "type": "chore", "hidden": true }
+  ]
+}
