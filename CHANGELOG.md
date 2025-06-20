@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.5](https://gitlab.com/ynov-gitprojet/TicTacToe/compare/v1.1.4...v1.1.5) (2025-06-20)
+
+
+### Corrections
+
+* **fix de la grille du morpion:** mise en place de la grille du morpion pour jouer ([40e0a23](https://gitlab.com/ynov-gitprojet/TicTacToe/commit/40e0a23f364495e487a59ab5fa02ccacfecb28ce))
+
 ### [1.1.4](https://gitlab.com/ynov-gitprojet/TicTacToe/compare/v1.1.3...v1.1.4) (2025-06-20)
 
 ### [1.1.3](https://gitlab.com/ynov-gitprojet/TicTacToe/compare/v1.1.0...v1.1.3) (2025-06-20)
