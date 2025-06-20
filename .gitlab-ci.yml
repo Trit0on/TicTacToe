@@ -1,3 +1,5 @@
+image: node:18
+
 stages:
   - precommit
   - build
@@ -10,16 +12,13 @@ precommit:
   stage: precommit
   script:
     - npx lint-staged
-  allow_failure: false
 
 build:
   stage: build
   script:
-    - echo "Pas de build à exécuter pour ce projet Node.js simple"
-  needs: [precommit]
+    - echo "Pas de build à exécuter"
 
 test:
   stage: test
   script:
     - npm run test
-  needs: [build]
