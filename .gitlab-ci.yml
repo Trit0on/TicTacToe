@@ -35,5 +35,7 @@ docker:
   script:
     - docker build -t "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME" .
     - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME"
-  only:
-    - branches
+rules:
+  - if: '$CI_COMMIT_MESSAGE =~ /^(feat|fix|style)(\(.+\))?: /'
+    when: always
+  - when: never
