@@ -1,24 +1,29 @@
 <%- include('partial/header') %>
 
-<h2 class="text-center my-4 bg-dark">Jeu du Morpion</h2>
+<h2 class="text-center my-4 bg-dark text-white p-3 rounded bg-primary">
+  🎯 Jeu du Morpion
+</h2>
 
 <div
   id="game-board"
-  class="d-flex flex-wrap justify-content-center mx-auto"
-  style="width: 300px"
+  class="d-flex flex-wrap justify-content-center mx-auto bg-light border rounded"
+  style="width: 400px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)"
 >
   <% for (let i = 0; i < 9; i++) { %>
   <div
-    class="cell border d-flex align-items-center justify-content-center"
+    class="cell border d-flex align-items-center justify-content-center fs-2"
+    style="height: 100px; width: 100px; cursor: pointer"
     data-index="<%= i %>"
   ></div>
   <% } %>
 </div>
 
-<p class="text-center mt-4 fw-bold" id="status">C’est au tour de X</p>
+<p class="text-center mt-4 fw-bold text-primary fs-4" id="status">
+  C’est au tour de X
+</p>
 
 <div class="text-center mt-3">
-  <button class="btn btn-primary" onclick="resetGame()">Rejouer</button>
+  <button class="btn btn-danger" onclick="resetGame()">Rejouer</button>
 </div>
 
 <script src="/js/script.js"></script>

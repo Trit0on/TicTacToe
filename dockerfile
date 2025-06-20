@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Expose le port (le même que ton serveur Express)
-EXPOSE 3000
+EXPOSE 3001
 
 # Démarre l'application
 CMD [ "npm", "start" ]

@@ -6,7 +6,8 @@
     "start": "node index.js",
     "prepare": "husky install",
     "test": "jest",
-    "release": "standard-version"
+    "release": "standard-version",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +25,7 @@
     "husky": "^9.1.7",
     "jest": "^30.0.2",
     "lint-staged": "^13.3.0",
+    "nodemon": "^3.1.10",
     "prettier": "^3.5.3",
     "standard-version": "^9.5.0",
     "supertest": "^7.1.1"
