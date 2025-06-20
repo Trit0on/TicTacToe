@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.6](https://gitlab.com/ynov-gitprojet/TicTacToe/compare/v1.1.5...v1.1.6) (2025-06-20)
+
+
+### Corrections
+
+* **renommage:** je test pour docker :) ([01cf9e0](https://gitlab.com/ynov-gitprojet/TicTacToe/commit/01cf9e03fc3fc4b654c1f306b6e62585efc711b8))
+
 ### [1.1.5](https://gitlab.com/ynov-gitprojet/TicTacToe/compare/v1.1.4...v1.1.5) (2025-06-20)
 
 
