@@ -1,107 +1,127 @@
-# 🎮 Tic Tac Toe – Projet Node.js + EJS
+# 🎮 Tic Tac Toe — Jeu web avec Node.js, Express et EJS
 
-Ce projet est une base structurée pour un jeu de **Morpion (Tic Tac Toe)** développé avec **Node.js**, **Express** et **EJS**. Il a été conçu pour démontrer de bonnes pratiques Git : messages de commit formels, versionnage sémantique, et intégration de hooks `pre-commit`.
-
----
-
-## 📦 Fonctionnalités prévues
-
-- Interface du jeu en **HTML/CSS/Bootstrap**
-- Structure **front/back** propre
-- Logique de jeu à compléter en JavaScript
-- Système prêt à accueillir une IA ou des scores plus tard
+Ce projet est une démonstration d’un jeu web de **Morpion (Tic Tac Toe)** développé avec **Node.js**, **Express** et **EJS**, intégrant de bonnes pratiques Git (commits formels, versionnage sémantique, CI/CD, etc.).
 
 ---
 
-## 🔧 Technologies utilisées
+## 🚀 Fonctionnalités
 
-- Node.js
-- Express.js
-- EJS (Embedded JavaScript Templates)
+- Interface de jeu responsive avec **Bootstrap**
+- Structure claire en **front-end / back-end**
+- Hooks `pre-commit` avec `Husky` et `lint-staged`
+- Commits formalisés avec `Commitizen`
+- Système de versionnage sémantique (`standard-version`)
+- Prêt pour un déploiement via Docker
+
+---
+
+## 🛠️ Technologies
+
+- Node.js + Express
+- EJS (templates)
 - Bootstrap (via npm)
 - JavaScript vanilla
-- Husky, lint-staged, Commitizen (pour la qualité Git)
+- Husky, lint-staged, Commitizen, standard-version
 
 ---
 
 ## ⚙️ Prérequis
 
-- Node.js (v18 recommandé)
+- Node.js ≥ v18
 - Git
 - npm
 
 ---
 
-## 🚀 Installation & lancement
+## 📦 Installation & lancement
 
-```bash
-# Cloner le projet
-git clone https://gitlab.com/VOTRE_UTILISATEUR/tic-tac-toe.git
-cd tic-tac-toe
+1. Cloner le dépôt :
+   ```bash
+   git clone https://gitlab.com/VOTRE_UTILISATEUR/tic-tac-toe.git
+   cd tic-tac-toe
+   ```
 
-# Installer les dépendances
-npm install
+2. Installer les dépendances :
+   ```bash
+   npm install
+   ```
 
-# Activer Husky si nécessaire
-npm run prepare
+3. Initialiser Husky :
+   ```bash
+   npm run prepare
+   ```
 
-# Lancer l'application
-node index.js
-```
+4. Lancer le serveur :
+   ```bash
+   node index.js
+   ```
 
-Puis ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
+Puis ouvrez votre navigateur sur : [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 📁 Structure du projet
+## 📁 Arborescence du projet
 
 ```
 tic-tac-toe/
 ├── index.js                # Serveur Express
 ├── views/                  # Templates EJS
 │   ├── game.ejs
-│   └── partials/           # Header/Footer
-├── public/                 # Fichiers statiques
+│   └── partials/           # Header / Footer
+├── public/                 # CSS, JS statiques
 │   ├── css/style.css
 │   └── js/script.js
+├── test/                   # Fichiers de test
 ├── .husky/                 # Hooks Git
 ├── package.json
+├── .dockerignore
 ├── .gitignore
+├── .gitlab-ci.yml
+├── .prettierrc
+├── CHANGELOG.md
+├── dockerfile
 └── README.md
 ```
 
 ---
 
-## ✅ Git & Bonnes pratiques
+## ✅ Bonnes pratiques Git
 
-- Utilisation de `commitizen` pour des commits formels :
+- **Commits structurés** avec Commitizen :
   ```bash
   npx cz
   ```
-- Version sémantique via :
+- **Versionnement sémantique** :
   ```bash
   npm version patch | minor | major
   ```
-- Hooks `pre-commit` avec `husky` + `lint-staged` :
-  vérifient que le code est propre avant chaque commit
+- **Changelog automatique** :
+  ```bash
+  npx standard-version
+  ```
 
 ---
 
-```Exemple de Workflow```
+## 🔁 Exemple de workflow Git
 
-# 1. Faire les commits avec Commitizen
+```bash
+# 1. Ajouter les fichiers
+git add .
+
+# 2. Commit avec Commitizen
 npx cz
 
-# 2. Mettre à jour le changelog
+# 3. Générer changelog et version
 npx standard-version
 
-# 3. Push le tout
+# 4. Pousser le tout
 git push --follow-tags origin main
-
-## 📌 Remarques
-
-> Le projet est fonctionnel côté structure, mais la logique complète du jeu reste à développer (clique sur les cases, détection de victoire, IA éventuelle...).
-
-Ce dépôt est prêt pour la collaboration, le développement incrémental, et les bonnes pratiques Git/GitLab.
+```
 
 ---
+
+## ℹ️ Remarques
+
+> La structure du jeu est en place, mais la logique complète (détection de victoire, IA...) reste à implémenter.
+
+Ce projet est prêt pour des contributions collaboratives avec un pipeline CI/CD GitLab complet et un Dockerfile.
