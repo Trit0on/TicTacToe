@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://gitlab.com/ynov-gitprojet/TicTacToe/compare/v1.1.1...v1.1.2) (2025-06-20)
+
+
+### Corrections
+
+* **lint version:** retrogradation de la version de lint pour pouvoir fonctionner avec Node 18 ([dc5b01e](https://gitlab.com/ynov-gitprojet/TicTacToe/commit/dc5b01e9b433c23675b4e5df605cfc84c0dd8ca5))
+
 ### [1.1.1](https://gitlab.com/ynov-gitprojet/TicTacToe/compare/v1.1.0...v1.1.1) (2025-06-20)
 
 
