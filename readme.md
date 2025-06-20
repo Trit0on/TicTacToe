@@ -87,6 +87,17 @@ tic-tac-toe/
 
 ---
 
+```Exemple de Workflow```
+
+# 1. Faire les commits avec Commitizen
+npx cz
+
+# 2. Mettre à jour le changelog
+npx standard-version
+
+# 3. Push le tout
+git push --follow-tags origin main
+
 ## 📌 Remarques
 
 > Le projet est fonctionnel côté structure, mais la logique complète du jeu reste à développer (clique sur les cases, détection de victoire, IA éventuelle...).
