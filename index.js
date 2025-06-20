@@ -22,6 +22,10 @@ app.get("/", (req, res) => {
 });
 
 // Lancer le serveur
-app.listen(PORT, () => {
-  console.log(`Serveur lancé : http://localhost:${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Serveur lancé : http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
