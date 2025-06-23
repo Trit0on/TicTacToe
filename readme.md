@@ -37,7 +37,7 @@ Ce projet est une démonstration d’un jeu web de **Morpion (Tic Tac Toe)** dé
 
 1. Cloner le dépôt :
    ```bash
-   git clone https://gitlab.com/VOTRE_UTILISATEUR/tic-tac-toe.git
+   git clone https://github.com/VOTRE_UTILISATEUR/tic-tac-toe.git
    cd tic-tac-toe
    ```
 
