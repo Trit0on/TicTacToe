@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://gitlab.com/ynov-gitprojet/TicTacToe/compare/v1.1.5...v1.2.0) (2025-06-23)
+
+
+### Documentation
+
+* **readme à jour:** readme à jour ([a54ceba](https://gitlab.com/ynov-gitprojet/TicTacToe/commit/a54ceba395b17c1d1d97e07b5c3d5e0c38afd9b6))
+
+
+### Corrections
+
+* **husky fix:** husky fix ([326bd49](https://gitlab.com/ynov-gitprojet/TicTacToe/commit/326bd4953b3af02f747dbba3e69dfe02bbf8b632))
+* **renommage:** je test pour docker :) ([7ceed6f](https://gitlab.com/ynov-gitprojet/TicTacToe/commit/7ceed6f929991fc46a53ff0ec08faca1f781b2fd))
+* **retest docker:** test docker if fix feat or style ([568e0aa](https://gitlab.com/ynov-gitprojet/TicTacToe/commit/568e0aa8d3fd68f193e7ae68be6b7f249c3ce79e))
+
+
+### Fonctionnalités
+
+* **test:** test ([ed20115](https://gitlab.com/ynov-gitprojet/TicTacToe/commit/ed20115ed89201271434f583f633c2a73d058fa0))
+
 ### [1.1.6](https://gitlab.com/ynov-gitprojet/TicTacToe/compare/v1.1.5...v1.1.6) (2025-06-20)
 
 
