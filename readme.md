@@ -37,8 +37,8 @@ Ce projet est une démonstration d’un jeu web de **Morpion (Tic Tac Toe)** dé
 
 1. Cloner le dépôt :
    ```bash
-   git clone https://github.com/VOTRE_UTILISATEUR/TicTacToe.git
-   cd tic-tac-toe
+   git clone git clone https://github.com/Trit0on/TicTacToe.git
+   cd TicTacToe
    ```
 
 2. Installer les dépendances :
