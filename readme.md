@@ -1,11 +1,15 @@
 # 🎮 Tic Tac Toe — Jeu web avec Node.js, Express et EJS
 ![Tests](https://github.com/Trit0on/TicTacToe/actions/workflows/tests.yml/badge.svg)
 
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Trit0on/TicTacToe)
-
+Lien vers le projet -> https://tictactoe-7987.onrender.com
 
 Ce projet est une démonstration d’un jeu web de **Morpion (Tic Tac Toe)** développé avec **Node.js**, **Express** et **EJS**, intégrant de bonnes pratiques Git (commits formels, versionnage sémantique, CI/CD, etc.).
+
+📘 **[Documentation & Wiki](https://github.com/Trit0on/TicTacToe/wiki)**  
+📄 Autres documents :  
+- [CI/CD](./ci-cd.md)  
+- [Sécurité](./security.md)
+
 
 ---
 
