@@ -1,51 +1,56 @@
-# 🔐 Security Policy
+# 🔐 Politique de Sécurité
 
-## 🚨 What to do in case of a security incident
+## 🚨 Que faire en cas d'incident de sécurité
 
-1. **Isolate the system**: Disable public access or deployment temporarily.
-2. **Contact immediately**:
-   - Project Lead: [Name, Email]
-   - Dev Team: [Email or GitLab handles]
-3. **Diagnose**: Identify suspicious commits or behaviors in the code.
-4. **Restart or recover**: Roll back to a stable commit or restore backup.
-5. **Document**: Create a GitLab issue describing the incident.
-
-## 🧯 Recovery Steps
-
-- Restore from the last known clean commit.
-- Remove or fix the compromised files.
-- Rotate any compromised keys or secrets.
-
-## 🛡️ Prevention Best Practices
-
-- `.env` files are not committed.
-- `.env.example` provided for safe configuration reference.
-- No hardcoded secrets in the codebase.
-- All user input is sanitized.
-- Input validation is enforced client- and server-side.
+1. **Isoler le système** : Désactiver temporairement l'accès public ou interrompre les déploiements.
+2. **Contacter immédiatement** :
+   - Responsable du projet : Samy Boudaoud – samyboudaoud95@gmail.com
+   - Équipe de développement : via GitHub ou Discord du projet
+3. **Diagnostiquer** : Identifier les commits ou comportements suspects dans le code.
+4. **Redémarrer ou restaurer** : Revenir à un commit stable ou restaurer une sauvegarde propre.
+5. **Documenter** : Créer une issue GitHub décrivant l’incident et les actions entreprises.
 
 ---
 
-## 🛠️ Simulated Incident: Page defacement
+## 🧯 Étapes de Rétablissement
 
-### Symptoms:
-- Fake message “YOU HAVE BEEN HACKED” on the homepage.
-- Redirect to an external malicious link.
-
-### Suspected Cause:
-- XSS vulnerability due to missing input sanitization.
-
-### Actions Taken:
-- Identified vulnerable input field.
-- Sanitized and validated user inputs.
-- Updated code and committed secure version.
+- Restaurer depuis le dernier commit propre et fonctionnel.
+- Supprimer ou corriger les fichiers compromis.
+- Régénérer et remplacer les clés/API ou secrets compromis si nécessaire.
 
 ---
 
-## 🔁 Response Protocol Summary
+## 🛡️ Bonnes Pratiques de Prévention
 
-1. Detect the issue
-2. Isolate the affected parts
-3. Notify the team and escalate if needed
-4. Mitigate and restore
-5. Document and prevent recurrence
+- Aucun fichier `.env` n’est versionné dans le dépôt.
+- Un fichier `.env.example` est fourni pour permettre une configuration sûre.
+- Aucun secret ou token sensible n’est codé en dur dans le code.
+- Les entrées utilisateur sont filtrées et échappées côté client et côté serveur.
+- Une validation stricte des données est appliquée.
+
+---
+
+## 🧪 Incident simulé : Défiguration de la page d'accueil
+
+### Symptômes :
+- Message affiché : “YOU HAVE BEEN HACKED” sur la page d'accueil.
+- Redirection vers un lien externe malveillant.
+
+### Cause suspectée :
+- Vulnérabilité XSS causée par l'absence de filtrage des entrées utilisateur.
+
+### Actions mises en place :
+- Champ d'entrée vulnérable identifié.
+- Application du filtrage (`sanitize`) et validation des données utilisateur.
+- Code mis à jour et version sécurisée committée.
+
+---
+
+## 🔁 Résumé du Protocole de Réponse
+
+1. Détecter l’anomalie
+2. Isoler les parties affectées
+3. Alerter l’équipe et escalader si nécessaire
+4. Corriger et restaurer
+5. Documenter et empêcher que cela se reproduise
+
