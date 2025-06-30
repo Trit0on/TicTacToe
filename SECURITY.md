@@ -4,7 +4,7 @@
 
 1. **Isoler le système** : Désactiver temporairement l'accès public ou interrompre les déploiements.
 2. **Contacter immédiatement** :
-   - Responsable du projet : Samy Boudaoud – samyboudaoud95@gmail.com
+   - Responsable du projet : Shun Lassal – Dylan - Jopcelin - Samy Boudaoud 
    - Équipe de développement : via GitHub ou Discord du projet
 3. **Diagnostiquer** : Identifier les commits ou comportements suspects dans le code.
 4. **Redémarrer ou restaurer** : Revenir à un commit stable ou restaurer une sauvegarde propre.
@@ -23,7 +23,7 @@
 ## 🛡️ Bonnes Pratiques de Prévention
 
 - Aucun fichier `.env` n’est versionné dans le dépôt.
-- Un fichier `.env.example` est fourni pour permettre une configuration sûre.
+- Un fichier `.env.example` est fourni pour permettre une configuration sûre (dans l'idéal mais pas dans notre cas).
 - Aucun secret ou token sensible n’est codé en dur dans le code.
 - Les entrées utilisateur sont filtrées et échappées côté client et côté serveur.
 - Une validation stricte des données est appliquée.
