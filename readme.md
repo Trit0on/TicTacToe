@@ -7,8 +7,8 @@ Ce projet est une démonstration d’un jeu web de **Morpion (Tic Tac Toe)** dé
 
 📘 **[Documentation & Wiki](https://github.com/Trit0on/TicTacToe/wiki)**  
 📄 Autres documents :  
-- [CI/CD](./ci-cd.md)  
-- [Sécurité](./security.md)
+- [CI/CD](./CI-CD.md)  
+- [Sécurité](./SECURITY.md)
 
 
 ---
